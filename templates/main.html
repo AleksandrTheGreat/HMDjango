@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'CSS/main.css' %}">
+</head>
+<body>
+    {% block menu %}
+    <div class="header">
+        <div class="menu">
+            <div>
+                <a href="{% url 'main' %}">Главная</a>
+            </div>
+            <div>
+                <a href="{% url 'game' %}">Игры</a>
+            </div>
+            <div>
+                <a href="{% url 'genre' %}">Жанры</a>
+            </div>
+            <div>
+                <a href="{% url 'status' %}">Подписки</a>
+            </div>
+            <div>
+                <a href="{% url 'cart' %}">Корзина</a>
+            </div>
+            <div>
+                <a href="{% url 'account' %}">Аккаунт</a>
+            </div>
+        </div>
+    </div>
+    {% endblock menu %}
+</body>
+</html>
