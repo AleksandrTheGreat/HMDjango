@@ -3,7 +3,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    {% block title %}
+    <title>Главная</title>
+    {% endblock title %}
     <link rel="stylesheet" href="{% static 'CSS/main.css' %}">
 </head>
 <body>
@@ -11,22 +13,22 @@
     <div class="header">
         <div class="menu">
             <div>
-                <a href="{% url 'main' %}">Главная</a>
+                <a href="{% url 'main' %}"><div>Главная</div></a>
             </div>
             <div>
-                <a href="{% url 'game' %}">Игры</a>
+                <a href="{% url 'game' %}"><div>Игры</div></a>
             </div>
             <div>
-                <a href="{% url 'genre' %}">Жанры</a>
+                <a href="{% url 'genre' %}"><div>Жанры</div></a>
             </div>
             <div>
-                <a href="{% url 'status' %}">Подписки</a>
+                <a href="{% url 'status' %}"><div>Подписки</div></a>
             </div>
             <div>
-                <a href="{% url 'cart' %}">Корзина</a>
+                <a href="{% url 'cart' %}"><div>Корзина</div></a>
             </div>
             <div>
-                <a href="{% url 'account' %}">Аккаунт</a>
+                <a href="{% url 'account' %}"><div>Аккаунт</div></a>
             </div>
         </div>
     </div>

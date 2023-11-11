@@ -1,0 +1,45 @@
+body {
+    margin: 0%;
+    font-family: '000webfont';
+    background-image: url(../IMG/fon.jpg);
+    background-size: 100%;
+}
+
+.header {
+    text-align: center;
+    font-size: 20pt;
+    background-color: white;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: fit-content;
+}
+
+.menu>div {
+    align-items: center;
+    display: flex;
+}
+
+.menu>div>a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu>div>a>div {
+    text-align: center;
+    align-items: center;
+    margin: 0%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: max-content;
+}
+
+.menu>div>a>div:hover {
+    background-color: black;
+    color: white;
+}
